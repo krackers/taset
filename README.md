@@ -18,9 +18,11 @@ cd simple
 を実行すると，input.txt にかかれた文章のアクセントを出力します．
 
 なお，利用に先立ち，
+
 - mecab (unidic, utf-8)
 - cabocha　(unidic, utf-8)
 - crf++
+
 をインストールしてパスを通しておく必要があります．
 
 mecab や cabocha は，辞書に unidic，エンコードに utf-8 を
@@ -49,18 +51,22 @@ cd ../03acrf/
 
 詳細は，シェルスクリプトの中身を読んで下さい．
 モデルの学習には，別途配布のデータベースが必要となります．
+
 - taset/train/01mkdata/in/jnas_test.txt
 - taset/train/01mkdata/in/jnas.txt
 - taset/train/01mkdata/in/label.txt 
+
 これらのデータは，JNAS もしくは S-JNAS の購入者に限り無償配布しています．
 利用したい方は，suzukimasayki (at) gmail.com に JNAS もしくは S-JNAS を
 購入したことを証明できるものをお送り下さい．
 
 また，
+
 - mecab (unidic, utf-8)
 - cabocha　(unidic, utf-8)
 - crf++
 - wp2txt
+
 を内部で使用するので，予めパスを通しておいて下さい．
 
 mecab や cabocha は，辞書に unidic，エンコードに utf-8 を
@@ -77,8 +83,10 @@ openjtalk のアクセントラベルを書き換えて音声合成ができま�
 - open_jtalk
 
 は予めインストールし，シェルスクリプト内を自分の環境に書き換えて利用してください．
+
 - taset/openjtalk/00init.sh
 - taset/openjtalk/01do.sh
+
 は，taset/train で作成したデータを音声合成するスクリプトです．
 
 なお適切に書き換えることで，それ以外のデータを音声合成することも可能です．
